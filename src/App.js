@@ -22,7 +22,7 @@ const App = () => {
         // onLoaderFinished={() => setProgress(0)}
         />
         <Switch>
-          <Route exact path="/News-App">
+          <Route exact path="/">
             <News setProgress={setProgress} key="general" pageSize={pageSize} country="in" category='general' />
           </Route>
           <Route exact path="/business">
