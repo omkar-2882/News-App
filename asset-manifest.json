@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/omkar-2882/News-App.git/static/css/main.f4852ee6.css",
+    "main.js": "/omkar-2882/News-App.git/static/js/main.36c058b6.js",
+    "static/js/787.4c026eef.chunk.js": "/omkar-2882/News-App.git/static/js/787.4c026eef.chunk.js",
+    "static/media/loading.gif": "/omkar-2882/News-App.git/static/media/loading.aa9a1c9b38652308939c.gif",
+    "index.html": "/omkar-2882/News-App.git/index.html",
+    "main.f4852ee6.css.map": "/omkar-2882/News-App.git/static/css/main.f4852ee6.css.map",
+    "main.36c058b6.js.map": "/omkar-2882/News-App.git/static/js/main.36c058b6.js.map",
+    "787.4c026eef.chunk.js.map": "/omkar-2882/News-App.git/static/js/787.4c026eef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4852ee6.css",
+    "static/js/main.36c058b6.js"
+  ]
+}
