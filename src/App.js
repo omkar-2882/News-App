@@ -19,7 +19,7 @@ const App = () => {
           color='#f0e68c'
           height={4}
           progress={progress}
-        // onLoaderFinished={() => setProgress(0)}
+          // onLoaderFinished={() => setProgress(0)}
         />
         <Switch>
           <Route exact path="/">

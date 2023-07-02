@@ -48,7 +48,8 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
         setPage(page+1)
-        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d865168ba8a84445b05c22ce257bf397&page=${page+1}&pageSize=${props.pageSize}`
+        // const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d865168ba8a84445b05c22ce257bf397&page=${page+1}&pageSize=${props.pageSize}`
+        const url = `https://newsapi.in/newsapi/news.php?country=${props.country}&category=${props.category}&apiKey=9tni1PU2eIOlIbpIeeei7iXba55ubX&page=${page+1}&pageSize=${props.pageSize}`
         let data = await fetch(url)
         let parsedData = await data.json()
         setArticles(articles.concat(parsedData.articles))
@@ -58,7 +59,7 @@ const News = (props) => {
 
     return (
         <>
-            <h1 style={{fontWeight:"bold"}} className='text-center p-4'>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+            <h1 style={{fontWeight:"bold"}} className='text-center p-4'>Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <Spinner />}
             <InfiniteScroll
                 dataLength={articles.length}
@@ -66,6 +67,7 @@ const News = (props) => {
                 hasMore={articles.length !== totalResults}
                 loader={<Spinner />}
             >
+                {console.log("Length: "+articles.length)}
                 <div className="container">
                     <div className="row">
                         {articles.map((element) => {
